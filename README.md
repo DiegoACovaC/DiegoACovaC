@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @DiegoAndresCovaCardenas
-- 👀 I’m interested in learn programming
+- 👀 I’m interested in learn programming and cybersecurity
 - 🌱 I’m currently looking for my first job.
 - 💞️ I’m looking to collaborate on my first job or proyect
 - 📫 How to reach me diegocova9@gmail.com and +57 3155455753
