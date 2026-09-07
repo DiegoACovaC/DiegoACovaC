@@ -1,8 +1,8 @@
-- 👋 Hi, I’m @DiegoCova
-- 👀 I’m interested in learn programming and cybersecurity
-- 🌱 I’m currently looking for my first job.
-- 💞️ I’m looking to collaborate on my first job or proyect
-- 📫 How to reach me diegocova9@gmail.com
+- Hi, I’m @DiegoCova
+- I’m interested in learn programming and cybersecurity
+- I’m currently looking for my first job.
+- I’m looking to collaborate on my first job or proyect
+- How to reach me diegocova9@gmail.com
 
 
 <!---
