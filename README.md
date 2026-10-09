@@ -39,4 +39,4 @@ Todo el trabajo ofensivo que publico se hace en entornos propios, labs (TryHackM
 
 ## Contacto
 
-[LinkedIn](https://www.linkedin.com/in/TU-USUARIO) · diegocova9@gmail.com
+[LinkedIn](https://www.linkedin.com/in/diegoa-cova-c/) · diegocova9@gmail.com
