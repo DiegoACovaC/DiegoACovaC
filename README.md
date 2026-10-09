@@ -20,10 +20,11 @@ Estudio Ingeniería de Software con enfoque en IA, desarrollo de software y cibe
 
 | Repo | Qué es | Estado |
 |---|---|---|
+| Asistente IA | Asistente personal enfocado a cotidianidad y seguridad | TERMINADA |
 | ctf-writeups | Writeups de retos retirados con detección y mitigación | En progreso |
-| log-analyzer | Detección de fuerza bruta SSH en `auth.log` con Python | Siguiente |
+| log-analyzer | Detección de fuerza bruta SSH en `auth.log` con Python | En progreso |
 
-> Los enlaces se agregan cuando cada repo tenga README propio. Un enlace a un repo vacío resta más de lo que suma.
+> 
 
 ## Stack
 
