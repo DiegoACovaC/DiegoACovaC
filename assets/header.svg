@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="230" viewBox="0 0 900 230" role="img" aria-label="Diego Cova, estudiante de Ingeniería de Software con enfoque en IA, software y ciberseguridad">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a101a"/>
+      <stop offset="1" stop-color="#070a10"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.15" cy="0" r="0.8">
+      <stop offset="0" stop-color="#2d8cff" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#2d8cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5aa9ff"/>
+      <stop offset="1" stop-color="#2f7de1"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#2d8cff" stroke-opacity="0.06"/>
+    </pattern>
+    <!-- Efecto de escritura: el ancho base es completo, así si la animación no corre el nombre se ve igual -->
+    <clipPath id="reveal">
+      <rect x="40" y="64" width="400" height="90">
+        <!-- 3 ciclos: escribe, mantiene, borra (4 s cada uno) -->
+        <animate id="loop" attributeName="width" values="0;400;400;0" keyTimes="0;0.3;0.85;1" dur="4s" begin="0s" repeatCount="3"/>
+        <!-- 4.ª escritura: se queda completa y aparece el cursor -->
+        <animate attributeName="width" from="0" to="400" dur="1.3s" begin="loop.end" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+  <style>
+    .mono { font-family: 'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono',monospace; }
+    .handle { fill: #5aa9ff; font-size: 15px; letter-spacing: 1px; }
+    .name { fill: url(#title); font-size: 56px; font-weight: 700; }
+    .sub { fill: #a9c9f5; font-size: 16px; }
+    .chip { fill: #0f1826; stroke: #2b6cc4; stroke-width: 1; }
+    .chipt { fill: #6cb4ff; font-size: 13px; }
+    .fade { animation: fadein 0.8s ease-out both; }
+    /* cursor: oculto hasta terminar los 3 ciclos + la 4.ª escritura (13.3 s), luego parpadea */
+    .cur { animation: caret 1s steps(1) 13.3s infinite backwards; }
+    @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes caret { 0% { fill-opacity: 0; } 50% { fill-opacity: 1; } }
+  </style>
+
+  <rect x="1" y="1" width="898" height="228" rx="16" fill="url(#bg)" stroke="#2b6cc4" stroke-opacity="0.7"/>
+  <rect x="1" y="1" width="898" height="228" rx="16" fill="url(#grid)"/>
+  <rect x="1" y="1" width="898" height="228" rx="16" fill="url(#glow)"/>
+
+  <g class="mono">
+    <text class="handle fade" x="48" y="62" style="animation-delay:0.1s">@diegoacovac</text>
+    <text class="name" x="46" y="124" clip-path="url(#reveal)">Diego Cova<tspan class="cur">|</tspan></text>
+    <text class="sub fade" x="48" y="156" style="animation-delay:1.0s">Estudiante de Ingeniería de Software · Colombia</text>
+    <text class="sub fade" x="48" y="178" style="animation-delay:1.2s" fill-opacity="0.8">Enfoque: IA · Software · Ciberseguridad (blue team / SOC, CTFs)</text>
+
+    <g class="fade" style="animation-delay:1.4s">
+      <rect class="chip" x="48" y="192" width="60" height="26" rx="13"/>
+      <text class="chipt" x="78" y="209" text-anchor="middle">IA</text>
+      <rect class="chip" x="120" y="192" width="100" height="26" rx="13"/>
+      <text class="chipt" x="170" y="209" text-anchor="middle">Software</text>
+      <rect class="chip" x="232" y="192" width="100" height="26" rx="13"/>
+      <text class="chipt" x="282" y="209" text-anchor="middle">Blue Team</text>
+      <rect class="chip" x="344" y="192" width="68" height="26" rx="13"/>
+      <text class="chipt" x="378" y="209" text-anchor="middle">CTF</text>
+      <rect class="chip" x="424" y="192" width="84" height="26" rx="13"/>
+      <text class="chipt" x="466" y="209" text-anchor="middle">Python</text>
+      <rect class="chip" x="520" y="192" width="84" height="26" rx="13"/>
+      <text class="chipt" x="562" y="209" text-anchor="middle">Linux</text>
+    </g>
+  </g>
+</svg>

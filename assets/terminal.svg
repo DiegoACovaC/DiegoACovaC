@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" role="img" aria-label="Terminal con información de perfil: rol, enfoque, herramientas y estado actual">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a101a"/>
+      <stop offset="1" stop-color="#070a10"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="1" r="0.7">
+      <stop offset="0" stop-color="#2d8cff" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#2d8cff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .mono { font-family: 'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono',monospace; }
+    .bar { fill: #0d1522; }
+    .title { fill: #8fbdf0; font-size: 12px; }
+    .label { fill: #5b9be0; font-size: 10px; letter-spacing: 2px; }
+    .k { fill: #6cb4ff; font-size: 13px; }
+    .v { fill: #dce9fb; font-size: 13px; }
+    .sep { fill: #274a7a; font-size: 13px; }
+    .panel { fill: #080e18; stroke: #2b6cc4; stroke-opacity: 0.6; }
+    .sprite { animation: bob 3.2s ease-in-out infinite; }
+    .live { fill: #5aa9ff; font-size: 10px; letter-spacing: 1px; }
+    .dot { fill: #5aa9ff; animation: pulse 1.6s ease-in-out infinite; }
+    .row { animation: fadein 0.5s ease-out both; }
+    .scan { fill: #5aa9ff; fill-opacity: 0.08; animation: scan 4s linear infinite; }
+    @keyframes bob { 50% { transform: translateY(-4px); } }
+    @keyframes pulse { 50% { opacity: 0.25; } }
+    @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes scan { 0% { transform: translateY(0); } 100% { transform: translateY(190px); } }
+  </style>
+
+  <rect x="1" y="1" width="898" height="328" rx="14" fill="url(#bg)" stroke="#2b6cc4" stroke-opacity="0.7"/>
+  <rect x="1" y="1" width="898" height="328" rx="14" fill="url(#glow)"/>
+
+  <!-- barra de ventana -->
+  <path class="bar" d="M1 15a14 14 0 0 1 14-14h870a14 14 0 0 1 14 14v22H1z"/>
+  <circle cx="22" cy="19" r="5" fill="#ff5f56"/>
+  <circle cx="40" cy="19" r="5" fill="#ffbd2e"/>
+  <circle cx="58" cy="19" r="5" fill="#27c93f"/>
+  <text class="mono title" x="450" y="23" text-anchor="middle">diegoacovac@github ~ $ ./whoami --verbose</text>
+  <circle class="dot" cx="842" cy="19" r="4"/>
+  <text class="mono live" x="852" y="23">LIVE</text>
+
+  <!-- panel izquierdo: Tux -->
+  <rect class="panel" x="20" y="54" width="300" height="256" rx="8"/>
+  <text class="mono label" x="34" y="74">OS.LINUX</text>
+  <!-- Pingüino original en pixel art (vectorial, sin fuentes) -->
+  <g class="sprite" shape-rendering="crispEdges">
+    <ellipse cx="170" cy="281" rx="44" ry="5" fill="#000" fill-opacity="0.35" shape-rendering="auto"/>
+    <rect x="138" y="96" width="64" height="8" fill="#0d1b33"/>
+    <rect x="122" y="104" width="16" height="8" fill="#0d1b33"/>
+    <rect x="138" y="104" width="64" height="8" fill="#5aa9ff"/>
+    <rect x="202" y="104" width="16" height="8" fill="#0d1b33"/>
+    <rect x="114" y="112" width="8" height="8" fill="#0d1b33"/>
+    <rect x="122" y="112" width="8" height="8" fill="#5aa9ff"/>
+    <rect x="130" y="112" width="80" height="8" fill="#2a5599"/>
+    <rect x="210" y="112" width="8" height="8" fill="#5aa9ff"/>
+    <rect x="218" y="112" width="8" height="8" fill="#0d1b33"/>
+    <rect x="98" y="120" width="8" height="8" fill="#0d1b33"/>
+    <rect x="106" y="120" width="8" height="8" fill="#5aa9ff"/>
+    <rect x="114" y="120" width="112" height="8" fill="#2a5599"/>
+    <rect x="226" y="120" width="8" height="8" fill="#5aa9ff"/>
+    <rect x="234" y="120" width="8" height="8" fill="#0d1b33"/>
+    <rect x="90" y="128" width="8" height="8" fill="#0d1b33"/>
+    <rect x="98" y="128" width="16" height="8" fill="#5aa9ff"/>
+    <rect x="114" y="128" width="8" height="8" fill="#0d1b33"/>
+    <rect x="122" y="128" width="16" height="8" fill="#2a5599"/>
+    <rect x="138" y="128" width="16" height="8" fill="#ffffff"/>
+    <rect x="154" y="128" width="32" height="8" fill="#2a5599"/>
+    <rect x="186" y="128" width="16" height="8" fill="#ffffff"/>
+    <rect x="202" y="128" width="16" height="8" fill="#2a5599"/>
+    <rect x="218" y="128" width="8" height="8" fill="#0d1b33"/>
+    <rect x="226" y="128" width="16" height="8" fill="#5aa9ff"/>
+    <rect x="242" y="128" width="8" height="8" fill="#0d1b33"/>
+    <rect x="90" y="136" width="8" height="8" fill="#0d1b33"/>
+    <rect x="98" y="136" width="16" height="8" fill="#5aa9ff"/>
+    <rect x="114" y="136" width="8" height="8" fill="#0d1b33"/>
+    <rect x="122" y="136" width="16" height="8" fill="#2a5599"/>
+    <rect x="138" y="136" width="8" height="8" fill="#ffffff"/>
+    <rect x="146" y="136" width="8" height="8" fill="#0a101a"/>
+    <rect x="154" y="136" width="32" height="8" fill="#2a5599"/>
+    <rect x="186" y="136" width="8" height="8" fill="#0a101a"/>
+    <rect x="194" y="136" width="8" height="8" fill="#ffffff"/>
+    <rect x="202" y="136" width="16" height="8" fill="#2a5599"/>
+    <rect x="218" y="136" width="8" height="8" fill="#0d1b33"/>
+    <rect x="226" y="136" width="16" height="8" fill="#5aa9ff"/>
+    <rect x="242" y="136" width="8" height="8" fill="#0d1b33"/>
+    <rect x="90" y="144" width="8" height="8" fill="#0d1b33"/>
+    <rect x="98" y="144" width="16" height="8" fill="#5aa9ff"/>
+    <rect x="114" y="144" width="8" height="8" fill="#0d1b33"/>
+    <rect x="122" y="144" width="32" height="8" fill="#2a5599"/>
+    <rect x="154" y="144" width="32" height="8" fill="#f2a33a"/>
+    <rect x="186" y="144" width="32" height="8" fill="#2a5599"/>
+    <rect x="218" y="144" width="8" height="8" fill="#0d1b33"/>
+    <rect x="226" y="144" width="16" height="8" fill="#5aa9ff"/>
+    <rect x="242" y="144" width="8" height="8" fill="#0d1b33"/>
+    <rect x="90" y="152" width="8" height="8" fill="#0d1b33"/>
+    <rect x="98" y="152" width="16" height="8" fill="#5aa9ff"/>
+    <rect x="114" y="152" width="8" height="8" fill="#0d1b33"/>
+    <rect x="122" y="152" width="40" height="8" fill="#2a5599"/>
+    <rect x="162" y="152" width="16" height="8" fill="#f2a33a"/>
+    <rect x="178" y="152" width="40" height="8" fill="#2a5599"/>
+    <rect x="218" y="152" width="8" height="8" fill="#0d1b33"/>
+    <rect x="226" y="152" width="16" height="8" fill="#5aa9ff"/>
+    <rect x="242" y="152" width="8" height="8" fill="#0d1b33"/>
+    <rect x="106" y="160" width="16" height="8" fill="#0d1b33"/>
+    <rect x="122" y="160" width="96" height="8" fill="#2a5599"/>
+    <rect x="218" y="160" width="16" height="8" fill="#0d1b33"/>
+    <rect x="106" y="168" width="8" height="8" fill="#0d1b33"/>
+    <rect x="114" y="168" width="32" height="8" fill="#2a5599"/>
+    <rect x="146" y="168" width="48" height="8" fill="#dce9fb"/>
+    <rect x="194" y="168" width="32" height="8" fill="#2a5599"/>
+    <rect x="226" y="168" width="8" height="8" fill="#0d1b33"/>
+    <rect x="98" y="176" width="8" height="8" fill="#0d1b33"/>
+    <rect x="106" y="176" width="32" height="8" fill="#2a5599"/>
+    <rect x="138" y="176" width="64" height="8" fill="#dce9fb"/>
+    <rect x="202" y="176" width="32" height="8" fill="#2a5599"/>
+    <rect x="234" y="176" width="8" height="8" fill="#0d1b33"/>
+    <rect x="98" y="184" width="8" height="8" fill="#0d1b33"/>
+    <rect x="106" y="184" width="24" height="8" fill="#2a5599"/>
+    <rect x="130" y="184" width="80" height="8" fill="#dce9fb"/>
+    <rect x="210" y="184" width="24" height="8" fill="#2a5599"/>
+    <rect x="234" y="184" width="8" height="8" fill="#0d1b33"/>
+    <rect x="90" y="192" width="8" height="8" fill="#0d1b33"/>
+    <rect x="98" y="192" width="32" height="8" fill="#2a5599"/>
+    <rect x="130" y="192" width="24" height="8" fill="#dce9fb"/>
+    <rect x="154" y="192" width="32" height="8" fill="#2f7de1"/>
+    <rect x="186" y="192" width="24" height="8" fill="#dce9fb"/>
+    <rect x="210" y="192" width="32" height="8" fill="#2a5599"/>
+    <rect x="242" y="192" width="8" height="8" fill="#0d1b33"/>
+    <rect x="90" y="200" width="8" height="8" fill="#0d1b33"/>
+    <rect x="98" y="200" width="32" height="8" fill="#2a5599"/>
+    <rect x="130" y="200" width="24" height="8" fill="#dce9fb"/>
+    <rect x="154" y="200" width="32" height="8" fill="#2f7de1"/>
+    <rect x="186" y="200" width="24" height="8" fill="#dce9fb"/>
+    <rect x="210" y="200" width="32" height="8" fill="#2a5599"/>
+    <rect x="242" y="200" width="8" height="8" fill="#0d1b33"/>
+    <rect x="90" y="208" width="8" height="8" fill="#0d1b33"/>
+    <rect x="98" y="208" width="32" height="8" fill="#2a5599"/>
+    <rect x="130" y="208" width="24" height="8" fill="#dce9fb"/>
+    <rect x="154" y="208" width="32" height="8" fill="#2f7de1"/>
+    <rect x="186" y="208" width="24" height="8" fill="#dce9fb"/>
+    <rect x="210" y="208" width="32" height="8" fill="#2a5599"/>
+    <rect x="242" y="208" width="8" height="8" fill="#0d1b33"/>
+    <rect x="90" y="216" width="8" height="8" fill="#0d1b33"/>
+    <rect x="98" y="216" width="32" height="8" fill="#2a5599"/>
+    <rect x="130" y="216" width="32" height="8" fill="#dce9fb"/>
+    <rect x="162" y="216" width="16" height="8" fill="#2f7de1"/>
+    <rect x="178" y="216" width="32" height="8" fill="#dce9fb"/>
+    <rect x="210" y="216" width="32" height="8" fill="#2a5599"/>
+    <rect x="242" y="216" width="8" height="8" fill="#0d1b33"/>
+    <rect x="98" y="224" width="8" height="8" fill="#0d1b33"/>
+    <rect x="106" y="224" width="24" height="8" fill="#2a5599"/>
+    <rect x="130" y="224" width="80" height="8" fill="#dce9fb"/>
+    <rect x="210" y="224" width="24" height="8" fill="#2a5599"/>
+    <rect x="234" y="224" width="8" height="8" fill="#0d1b33"/>
+    <rect x="98" y="232" width="8" height="8" fill="#0d1b33"/>
+    <rect x="106" y="232" width="32" height="8" fill="#2a5599"/>
+    <rect x="138" y="232" width="64" height="8" fill="#dce9fb"/>
+    <rect x="202" y="232" width="32" height="8" fill="#2a5599"/>
+    <rect x="234" y="232" width="8" height="8" fill="#0d1b33"/>
+    <rect x="106" y="240" width="8" height="8" fill="#0d1b33"/>
+    <rect x="114" y="240" width="32" height="8" fill="#2a5599"/>
+    <rect x="146" y="240" width="48" height="8" fill="#dce9fb"/>
+    <rect x="194" y="240" width="32" height="8" fill="#2a5599"/>
+    <rect x="226" y="240" width="8" height="8" fill="#0d1b33"/>
+    <rect x="114" y="248" width="16" height="8" fill="#0d1b33"/>
+    <rect x="130" y="248" width="80" height="8" fill="#2a5599"/>
+    <rect x="210" y="248" width="16" height="8" fill="#0d1b33"/>
+    <rect x="122" y="256" width="96" height="8" fill="#0d1b33"/>
+    <rect x="106" y="264" width="8" height="8" fill="#0d1b33"/>
+    <rect x="114" y="264" width="40" height="8" fill="#f2a33a"/>
+    <rect x="154" y="264" width="8" height="8" fill="#0d1b33"/>
+    <rect x="178" y="264" width="8" height="8" fill="#0d1b33"/>
+    <rect x="186" y="264" width="40" height="8" fill="#f2a33a"/>
+    <rect x="226" y="264" width="8" height="8" fill="#0d1b33"/>
+    <rect x="114" y="272" width="40" height="8" fill="#0d1b33"/>
+    <rect x="186" y="272" width="40" height="8" fill="#0d1b33"/>
+  </g>
+  <text class="mono k" x="170" y="298" text-anchor="middle">[ powered by Linux ]</text>
+  <rect class="scan" x="21" y="82" width="298" height="3"/>
+
+  <!-- panel derecho: info -->
+  <rect class="panel" x="336" y="54" width="544" height="256" rx="8"/>
+  <text class="mono label" x="352" y="74">SYSTEM.INFO</text>
+  <g class="mono">
+    <g class="row" style="animation-delay:0.2s"><text class="k" x="352" y="108">Subject</text><text class="sep" x="450" y="108">·········</text><text class="v" x="540" y="108">Diego Cova (@diegoacovac)</text></g>
+    <g class="row" style="animation-delay:0.5s"><text class="k" x="352" y="138">Role</text><text class="sep" x="450" y="138">·········</text><text class="v" x="540" y="138">Estudiante de Ing. de Software</text></g>
+    <g class="row" style="animation-delay:0.8s"><text class="k" x="352" y="168">Focus</text><text class="sep" x="450" y="168">·········</text><text class="v" x="540" y="168">IA · Software · Blue team / SOC</text></g>
+    <g class="row" style="animation-delay:1.1s"><text class="k" x="352" y="198">Tools</text><text class="sep" x="450" y="198">·········</text><text class="v" x="540" y="198">Python, Linux, Nmap, Wireshark</text></g>
+    <g class="row" style="animation-delay:1.4s"><text class="k" x="352" y="228">Learning</text><text class="sep" x="450" y="228">·········</text><text class="v" x="540" y="228">IA, SIEM, análisis de logs, redes</text></g>
+    <g class="row" style="animation-delay:1.7s"><text class="k" x="352" y="258">Status</text><text class="sep" x="450" y="258">·········</text><text class="v" x="540" y="258">Building | Learning | Documenting</text></g>
+    <g class="row" style="animation-delay:2.0s"><text class="k" x="352" y="288">Ethics</text><text class="sep" x="450" y="288">·········</text><text class="v" x="540" y="288">Solo labs y entornos autorizados</text></g>
+  </g>
+</svg>
